@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: JsontoCSV
+Bundle-Name: JsontoCSV
+Bundle-Version: 2.0
+Bundle-Description: JsontoCSV
+Export-Package: com.nuwan
+DynamicImport-Package: *
+
+
