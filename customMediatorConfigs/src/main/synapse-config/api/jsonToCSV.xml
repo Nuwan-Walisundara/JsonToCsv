@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/to-csv" name="jsonToCSV" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <payloadFactory media-type="json">
+                <format>{
+	"ORDERS": {
+		"ORDER": [
+			{
+				"ORDER_NO": "ABD,DEF",
+				"AMOUNT": "20"
+			},
+			{
+				"ORDER_NO": "30",
+				"AMOUNT": "30"
+			},
+			{
+				"ORDER_NO": "50",
+				"AMOUNT": "50"
+			}
+		]
+	}
+}</format>
+                <args/>
+            </payloadFactory>
+            <log/>
+            <class name="com.csvutil.JsonToCsv"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

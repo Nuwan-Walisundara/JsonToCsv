@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1663166944763
+Build-Jdk-Spec: 11
+Bundle-Description: CustomCSV
+Bundle-ManifestVersion: 2
+Bundle-Name: CustomCSV
+Bundle-SymbolicName: CustomCSV
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin 5.1.8
+DynamicImport-Package: *
+Export-Package: com.csvutil;uses:="org.apache.synapse,org.apache.synapse
+ .mediators";version="1.0.0"
+Import-Package: com.fasterxml.jackson.core;version="[2.13,3)",com.faster
+ xml.jackson.databind;version="[2.13,3)",com.fasterxml.jackson.dataforma
+ t.csv;version="[2.13,3)",org.apache.axiom.om,org.apache.axis2.context;v
+ ersion="[1.6,2)",org.apache.synapse,org.apache.synapse.commons.json,org
+ .apache.synapse.core.axis2,org.apache.synapse.mediators,org.json;versio
+ n="[20220320.0,20220321)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-6.3.1.202206071316
